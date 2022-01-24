@@ -1,0 +1,26 @@
+{
+  "name": "testvik",
+  "version": "1.0.0",
+  "description": "first gulp project",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Vika Belan",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.27.7",
+    "gulp": "^4.0.2",
+    "gulp-sass": "^5.1.0",
+    "gulp-sourcemaps": "^3.0.0"
+  },
+  "dependencies": {
+    "cssnano": "^5.0.16",
+    "gulp-postcss": "^9.0.1",
+    "gulp-terser": "^2.1.0",
+    "sass": "^1.49.0"
+  }
+}
