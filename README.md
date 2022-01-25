@@ -1,5 +1,5 @@
 # test-task
 
-install npm install && yarn 
+ONLY install npm install  
 
 start project - gulp
