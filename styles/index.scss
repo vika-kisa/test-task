@@ -762,7 +762,7 @@ html, body {
     }
   }
 
-  .spisok-menu {
+  .list-menu {
     font-weight: bold;
     font-size: 1.26rem;
     line-height: 2.99rem;
@@ -792,61 +792,56 @@ html, body {
   }
 
   .footer-secondColumn {
-    height: 30.8rem;
-    width: 53rem;
     margin-top: 12.6rem;
     margin-left: 10.5rem;
+    display: flex;
+
 
     .menu-container {
       display: flex;
-      justify-content: space-between;
-      align-items: flex-start;
-
-      .menu {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-
-        .footer-bottom {
-          font-size: 1.17rem;
-          line-height: 1.9rem;
-          margin-top: 6.4rem;
-        }
-      }
-  
-      .menu-services {
-        margin-left: -52.4rem;
-      }
-  
-      .contact {
-        margin-left: -25rem;
-
-        .mail {
-          margin-left: 1.8rem;
-          font-size: 1.62rem;  
-          line-height: 2.6rem;
-          font-weight: normal;
-        }
-
-        img {
-          vertical-align: baseline;
-        }
-
-        .mobile {
-          margin-left: 2.1rem;
-          font-size: 1.62rem;  
-          line-height: 2.6rem;
-          font-weight: normal;
-        }
-      }
-
+      flex-direction: column;
     }
+    
+    .services-container {
+      margin-left: 4rem;
+      padding-right: 17.6rem;
+    }
+
+    .footer-bottom {
+      font-size: 1.17rem;
+      line-height: 1.9rem;
+      margin-top: 30rem;
+      position: absolute;
+    }
+
   }
 
   .footer-thirdColumn {
+    margin-top: 12.6rem;
+    padding-right: 12.8rem;
+
+    .mail {
+      margin-left: 1.8rem;
+      font-size: 1.62rem;  
+      line-height: 2.6rem;
+      font-weight: normal;
+    }
+
+    img {
+      vertical-align: baseline;
+    }
+
+    .mobile {
+      margin-left: 2.1rem;
+      font-size: 1.62rem;  
+      line-height: 2.6rem;
+      font-weight: normal;
+    }
+  }
+
+  .footer-fourthColumn {
     height: 9.2rem;
     margin-top: 12.6rem;
-    margin-left: 15.1rem; 
     
     .follow-item {
       position: absolute;
@@ -864,15 +859,10 @@ html, body {
     }
 
     .icons {
+      display: flex;
       margin-top: 7.5rem;
+      gap: 4.1rem;
     }
 
-    .first-icon {
-      margin-left: 0rem;
-    }
-
-    img {
-      margin-left: 3.2rem;
-    }
   }
 }
