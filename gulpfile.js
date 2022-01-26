@@ -6,7 +6,7 @@ const terser = require('gulp-terser');
 const browsersync = require('browser-sync').create();
 
 function scssTask() {
-    return src ('./styles/index.scss',{ sourcemaps: true })
+    return src ('./src/styles/index.scss',{ sourcemaps: true })
     .pipe (sass())
     .pipe (postcss([cssnano()]))
     .pipe (dest('sass',{ sourcemaps: '.'}));
@@ -15,7 +15,7 @@ function scssTask() {
 function browsersyncServe(cb){
     browsersync.init({
       server: {
-        baseDir: '.'
+        baseDir: './src'
       }    
     });
     cb();
