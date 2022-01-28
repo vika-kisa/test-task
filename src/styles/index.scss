@@ -54,20 +54,17 @@ html, body {
 
 .header {
   width: 100%;
-  height: 100vh;
   background: url("/assets/img/headerBackground.png") no-repeat center center;
   background-size: cover;
   position: relative;
   color: $white;
   font-size: 1.4rem;
-
   display: flex;
   flex-direction: column;
   padding-bottom: 9rem;
 
   .menu {
-    display: flex;
-    justify-content: space-between;
+    @include flex-between;
     padding: 6rem 12rem 3.6rem 13.7rem;
     align-items: center;
 
@@ -125,8 +122,7 @@ html, body {
   }
 
   .header-content {
-    display: flex;
-    justify-content: space-between;
+    @include flex-between;
     padding: 8.3rem 12rem 1rem 13.7rem;
     flex-grow: 1;
 
@@ -199,8 +195,7 @@ html, body {
 }
 
 .intro {
-  display: flex;
-  justify-content: space-between;
+  @include flex-between;
   padding: 8rem 0 25rem 14.7rem;
   width: 100%;
 
@@ -312,8 +307,7 @@ html, body {
   margin-top: -12rem;
 
   .features-container {
-    display: flex;
-    justify-content: space-between;
+    @include flex-between;
     width: 100%;
   }
 
@@ -471,28 +465,25 @@ html, body {
         margin-top: 2.7rem;
       }
   
-      .title-orange {
-        color: $orange;
+      .title-blue, 
+      .title-orange,
+      .title-pink {
         font-weight: 500;
         font-size: 1.8rem;
         line-height: 2.7rem;
         margin-top: 1.8rem;
+      }
+
+      .title-orange {
+        color: $orange;
       }
 
       .title-blue {
         color: $blue;
-        font-weight: 500;
-        font-size: 1.8rem;
-        line-height: 2.7rem;
-        margin-top: 1.8rem;
       }
 
       .title-pink {
         color: $pink;
-        font-weight: 500;
-        font-size: 1.8rem;
-        line-height: 2.7rem;
-        margin-top: 1.8rem;
       }
 
     .topWidget {
@@ -747,8 +738,7 @@ html, body {
   .footer-container {
     width: 112rem;
     margin: 12.6rem auto;
-    display: flex;
-    justify-content: space-between;
+    @include flex-between;
   }
 
   .menu-item {
@@ -795,8 +785,7 @@ html, body {
   }
 
   .footer-secondColumn {
-    display: flex;
-    justify-content: space-between;
+    @include flex-between;
     width: 15rem;
 
     .footer-bottom {
