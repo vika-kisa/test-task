@@ -521,6 +521,7 @@ body {
       -ms-flex-pack: justify;
           justify-content: space-between;
   width: 100%;
+  height: 100.8rem;
 }
 
 .features .viol {
@@ -532,6 +533,9 @@ body {
   height: 100.8rem;
   background: url("/assets/img/features-back.png");
   background-size: cover;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .features .features-text {
@@ -609,10 +613,12 @@ body {
 }
 
 .features .features-photo {
-  width: 4rem;
+  width: 26rem;
   height: 61.2rem;
   margin-top: 19.8rem;
-  margin-left: 12.8rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .features .verticalText {
@@ -625,8 +631,13 @@ body {
 }
 
 .features .verticalText span {
-  margin-top: 42rem;
-  margin-left: 137rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-left: 129rem;
   color: #5E239D;
   -webkit-writing-mode: vertical-lr;
       -ms-writing-mode: tb-lr;
@@ -646,8 +657,18 @@ body {
 }
 
 .services .services-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   text-align: center;
   padding-top: 32.4rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .services .services-text .services-topTitle {
@@ -675,7 +696,6 @@ body {
   font-size: 1.8rem;
   line-height: 2.9rem;
   margin-top: 2.3rem;
-  margin-left: 44.1rem;
 }
 
 .services .services-widget {
@@ -832,6 +852,16 @@ body {
 .testimonials .testimonials-text {
   text-align: center;
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .testimonials .testimonials-text .pink-leftButton {
@@ -839,7 +869,6 @@ body {
   display: -ms-flexbox;
   display: flex;
   position: absolute;
-  margin-top: 6rem;
   left: 14.9rem;
   background: #FCFCFC;
 }
@@ -848,7 +877,7 @@ body {
   opacity: 0.8;
 }
 
-.testimonials .testimonials-text .testimonials-subTitle {
+.testimonials .testimonials-text .testimonials-title {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -857,8 +886,7 @@ body {
   font-style: italic;
   line-height: 6.4rem;
   width: 75.4rem;
-  margin-left: 37.8rem;
-  margin-top: -3.2rem;
+  margin-top: -5.2rem;
 }
 
 .testimonials .testimonials-text .pink-rightButton {
@@ -866,8 +894,7 @@ body {
   display: -ms-flexbox;
   display: flex;
   position: absolute;
-  margin-top: -7.2rem;
-  right: 18.9rem;
+  right: 14.7rem;
   background: #FCFCFC;
 }
 
@@ -888,7 +915,17 @@ body {
 
 .newsletter {
   width: 100%;
-  height: 39.6rem;
+  height: 57.6rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .newsletter .newsletter-text {
@@ -910,50 +947,79 @@ body {
   line-height: 2.7rem;
 }
 
-.newsletter .newsletter-text .newsletter-button {
-  height: 4.4rem;
-  width: 55.8rem;
+.newsletter .newsletter-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 5.4rem;
+  width: 56.8rem;
   position: relative;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-top: 7.5rem;
   font-weight: 800;
-  font-size: 1.8rem;
-  line-height: 3.7rem;
+  line-height: 3rem;
   letter-spacing: 0.4rem;
   text-transform: uppercase;
-  margin-left: 44.5rem;
   border-bottom: 0.3rem solid #F4F4ED;
 }
 
-.newsletter .newsletter-text .newsletter-button .email {
+.newsletter .newsletter-button .email {
   position: absolute;
   color: #9B94A3;
   left: 1.8rem;
   cursor: pointer;
+  font-size: 1.8rem;
 }
 
-.newsletter .newsletter-text .newsletter-button .email:hover {
+.newsletter .newsletter-button .email:hover {
   opacity: 0.8;
 }
 
-.newsletter .newsletter-text .newsletter-button .subscribe {
+.newsletter .newsletter-button .subscribe {
   cursor: pointer;
-  position: absolute;
-  color: #F61067;
-  right: 6.5rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 22.6rem;
+  height: 5.4rem;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(242, 242, 242, 0.5)), to(rgba(255, 255, 255, 0)));
+  background: -o-linear-gradient(top, rgba(242, 242, 242, 0.5) 0%, rgba(255, 255, 255, 0) 100%);
+  background: linear-gradient(180deg, rgba(242, 242, 242, 0.5) 0%, rgba(255, 255, 255, 0) 100%);
+  -webkit-transform: matrix(1, 0, 0, -1, 0, 0);
+      -ms-transform: matrix(1, 0, 0, -1, 0, 0);
+          transform: matrix(1, 0, 0, -1, 0, 0);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
-.newsletter .newsletter-text .newsletter-button .subscribe:hover {
+.newsletter .newsletter-button .subscribe p {
+  color: #F61067;
+  right: 8.2rem;
+  font-size: 1.26rem;
+  font-weight: 800;
+  line-height: 3rem;
+  letter-spacing: 0.6rem;
+  text-transform: uppercase;
+  -webkit-transform: matrix(1, 0, 0, -1, 0, 0);
+      -ms-transform: matrix(1, 0, 0, -1, 0, 0);
+          transform: matrix(1, 0, 0, -1, 0, 0);
+}
+
+.newsletter .newsletter-button .subscribe:hover {
   opacity: 0.8;
 }
 
-.newsletter .newsletter-text .newsletter-button img {
-  position: absolute;
-  right: -0.1rem;
-  top: -1.2rem;
-  z-index: -1;
+.newsletter .newsletter-button .subscribe img {
+  width: 2.7rem;
 }
 
 .footer {
