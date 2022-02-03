@@ -10,14 +10,14 @@ const path = {
   },
   src: {
     html: sourceFolder + "/*.html",
-    css: sourceFolder + "/styles/index.scss",
+    css: sourceFolder + "/styles/**.scss",
     js: sourceFolder + "/js/script.js", // если будешь использовать js, то в корне нужно создать папку js и в ней файл script.js. если нет, то удали эту и 8 и 22 строку
     img: sourceFolder + "/assets/**/*.+(png|jpg|svg)", //пришлось откорректировать регулярное выражение указывающее на пути к файлам img
   },
   watch: {
-    html: sourceFolder + "//*.html",
+    html: sourceFolder + "/*.html",
     css: sourceFolder + "/styles/*.scss",
-    js: sourceFolder + "/js//*.js",
+    js: sourceFolder + "/js/*.js",
     img: sourceFolder + "/assets/**/*.+(png|jpg|svg)",
   },
   clean: "./" + projectFolder + "/",

@@ -1,0 +1,749 @@
+@import "nullstyle.scss";
+@import "scrollbar.scss";
+@import "mixin.scss";
+
+$containerWidth: 1440px;
+
+html, body {
+   height: 100%;
+   scroll-behavior: smooth;
+   font-size: 62.5%;
+   font-family: 'M PLUS 1p', sans-serif;
+}
+
+@media only screen and (max-width: 1300px) {
+   html, body {
+    font-size: 58%;
+   }
+}
+@media only screen and (max-width: 1115px) {
+   html, body {
+     font-size: 46%;
+   }
+}
+
+* {
+    user-select: none;
+  
+}
+
+.container {
+    width: 100%;
+    max-width: $containerWidth;
+    margin: 0 auto;
+}
+
+.main-title {
+    color: $pink;
+    font-weight: 800;
+    font-size: 1.26rem;
+    line-height: 2.6rem;
+    letter-spacing: .6rem;
+    text-transform: uppercase;
+}
+
+.main-subTitle {
+    color: $white; 
+    font-weight: 500;
+    font-size: 2.7rem;
+    line-height: 4rem;
+    width: 75.4rem;
+}
+
+header {
+    width: 100%;
+    background-size: cover;
+    position: relative;
+    font-size: 1.44rem;
+    display: flex;
+    flex-direction: column;
+
+    .menu {
+        @include flex-between;
+        padding: 6rem 12.8rem 3.6rem 14.7rem;
+        align-items: center;
+        color: $primary_violet;
+
+        .logo {
+            font-weight: 900;
+            font-size: 2.4rem;
+            line-height: 4.3rem;
+            letter-spacing: .2rem;
+            color: $violet;
+        }
+
+        .navigation {
+            display: flex;
+            gap: 5.4rem;
+
+            .navigation-item {
+                opacity: .8;
+                cursor: pointer;
+                position: relative;
+                line-height: 3rem;
+                font-weight: 800;
+
+                &:after {
+                    content: "";
+                    height: .1rem;
+                    background: $primary_violet;
+                    bottom: 0;
+          
+                    position: absolute;
+                    margin-left: auto;
+                    margin-right: auto;
+                    left: 0;
+                    right: 0;
+                    text-align: center;
+          
+                    width: 0;
+                    transition: all .3s ease;
+                }
+
+                &:hover, &.active {
+                    opacity: 1;
+          
+                    &:after {
+                      width: 80%;
+                      transition: all .3s ease;
+                    }
+                }
+            }
+        }
+
+        .phone {
+            display: flex;
+            align-items: center;
+            gap: 1.8rem;
+            font-weight: 800;
+            letter-spacing: .2rem;
+        }
+
+        .menuIcon {
+            height: 1.6rem;
+        }
+    }
+
+    .header-content {
+        @include flex-between;
+        padding: 10.8rem 12rem 1rem 14.7rem;
+        flex-grow: 1;
+        background: url("/assets/img/headerBackground.png") no-repeat center center;
+        height: 36rem;
+
+        .text {
+            margin-bottom: 7rem;
+
+            h2 {
+                font-weight: 500;
+                font-size: 5.4rem;
+                line-height: 8rem;
+                color: $pink;
+            }
+
+            p {
+                font-weight: 800;
+                font-size: 1.8rem;
+                line-height: 3.7rem;
+                letter-spacing: .4rem;
+                text-transform: uppercase; 
+                color: $light_yellow;
+            }
+        }
+    }
+} 
+
+.intro {
+    @include flex-between;
+    padding: 10.9rem 0 24.5rem 14.7rem;
+    width: 100%;  
+
+    .container-text {
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
+        width: 105rem;
+        height: 40.2rem;
+    }
+
+    h5 {
+        margin-top: 1.8rem;
+        color: $primary_violet;
+    }
+
+    .mainText {
+        @include flex-between;
+        flex-direction: row;
+        margin-top: 7.2rem;
+        font-size: 1.8rem;
+
+        .first-column {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .second-column {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .title-column {
+            color: $primary_violet;
+            font-weight: 500;
+            line-height: 2.7rem;            
+        }
+        p {
+            width: 46rem;
+            font-weight: normal;
+            line-height: 2.9rem;
+            margin-top: 1.2rem;
+            color: $light_violet;
+        }
+    }
+}
+
+.features {
+    width: 100%;
+    height: 127.8rem;
+
+    .features-container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+
+        .features-title {
+            height: 32.4rem;
+            background-color: $dark_blue; 
+            color: $white;  
+
+            p {
+                margin-left: 14.7rem;
+                margin-top: 10.8rem;
+                color: $white;
+            }
+
+            h3 {
+                font-weight: 500;
+                font-size: 4.5rem;
+                line-height: 6.7rem;
+                margin-top: 1.2rem;
+                margin-left: 14.7rem;
+            }
+        }
+        .features-text {
+            background-color:$violet ;
+            height: 95.4rem;
+            width: 122.5rem;
+            color: $white;
+            display: flex;
+
+            .main-text {
+                display: flex;
+                flex-direction: column;
+                gap: 8.7rem;
+                margin-top: 18rem;
+
+                .title {
+                    width: 26.4rem;
+                    height: 9rem;
+                    font-weight: 500;
+                    font-size: 2.7rem;
+                    line-height: 4rem;
+                    margin-top: -1.5rem;
+                }
+                
+                .first-row, .second-row,
+                .third-row {
+                    display: flex;
+                    margin-left: 14.7rem;
+                    gap: 11.7rem;
+                }
+
+                p {
+                    width: 36.2rem;
+                    font-size: 1.8rem;
+                    line-height: 2.9rem;
+                }
+            }
+
+            img {
+                width: 41.1rem;
+                height: 81rem;
+                margin-left: 13.8rem;
+                margin-top: -19.9rem;
+            }
+        }
+    }
+}
+
+.clients {
+    width: 100%;
+    height: 97.2rem;
+    display: flex;
+    flex-direction: column;
+
+    .clients-title {
+        margin-top: 10.8rem;
+        margin-left: 14.7rem;
+
+        h3 {
+            font-weight: 500;
+            font-size: 4.5rem;
+            line-height: 6.7rem;
+            width: 86.7rem;
+            margin-top: 1.2rem;
+            color: $primary_violet;
+        }
+    }
+
+    .clients-main {
+        display: flex;
+        flex-direction: row;
+        margin-top: 11.8rem;
+
+        .violet-text {
+            display: flex;
+            flex-direction: column;
+            background-color: $dark_blue;
+            width: 70.5rem;
+            height: 68.4rem;
+
+            h4 {
+                margin-top: 14.4rem;
+                margin-left: 14.7rem;
+                color: $pink;
+                font-weight: 500;
+                font-size: 3.6rem;
+                line-height: 5.3rem;
+            }
+
+            p {
+                width: 46rem;
+                color: $white;
+                font-size: 1.8rem;
+                line-height: 2.9rem;
+                margin-left: 14.7rem;
+                margin-top: 4rem;
+                font-weight: normal;
+            }
+        }
+
+        .logo {
+            display: flex;
+            flex-direction: column;
+
+            .logo-title {
+                display: flex;
+                margin-left: 12.8rem;
+                color: $primary_violet;
+                width: 46rem;
+                height: 10.8rem;
+                align-items: center;
+
+                p {
+                    font-weight: 800;
+                    font-size: 1.26rem;
+                    line-height: 2.6rem;
+                    letter-spacing: .6rem;
+                    text-transform: uppercase;
+                }
+            }
+
+            .logo-img {
+                @include flex-between;
+                margin-left: 12.7rem;
+                margin-top: 4rem;
+                height: 36rem;
+                width: 46rem;
+
+                .first-logo {
+                    @include flex-between;
+                    flex-direction: column;
+                }
+
+                .second-logo {
+                   @include flex-between;
+                    flex-direction: column;
+                }
+            }
+        }
+    }
+}
+
+.section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: $violet;
+    height:113.4rem;
+
+    .section-text {
+        margin-top: 25.2rem;
+        margin-left: 14.7rem;
+        
+        h5 {
+            margin-top: 1.2rem;
+        }
+    }
+
+    .section-blocks {
+        display: flex;
+        margin-top: 6rem;
+        margin-left: 14.7rem;
+        color: $white;
+        gap: 6.6rem;
+
+        .first-block, .second-block,
+        .third-block {
+            display: flex;
+            flex-direction: column;
+            width: 36.2rem;
+            height: 36.2rem;
+        }
+
+        .first-block {
+            background-color: $pink;
+
+            img, h5, p {
+                margin-left: 3.2rem;
+            }
+        }
+        
+
+        img {
+            width: 7.2rem;
+            height: 7.2rem;
+            margin-top: 5.4rem;
+        }
+
+        h5 {
+            font-weight: 500;
+            font-size: 2.7rem;
+            line-height: 4rem;
+            margin-top: 1.8rem;
+        }
+
+        p {
+            margin-top: 1.3rem;
+            width: 29rem;
+            font-size: 1.62rem;
+            line-height: 2.6rem;
+        }
+    }
+}
+
+.testimonials {
+    width: 100%;
+    margin-top: -13.8rem;
+    z-index: -1;
+    height: 90rem;
+  
+    .testimonials-photo {
+     text-align: center;
+  
+      p {
+        color: $pink;
+        font: 19.4rem Noticia Text; 
+        font-style: italic;
+        font-weight: bold;
+        margin-top: -7.4rem;
+      }
+  
+      .mini-photo {
+        position: relative;
+  
+        .photo1 {
+          position: absolute;
+          top: -24.4rem;
+          left: 2.8rem;
+        }
+    
+        .photo2 {
+          position: absolute;
+          top: -43rem;
+          left: 17.5rem;
+        }
+    
+        .photo3 {
+          position: absolute;
+          top: -29rem;
+          left: 34.3rem;
+        }
+  
+        .photo4 {
+          position: absolute;
+          top: -29rem;
+          right: 35.7rem;
+        }
+  
+        .photo5 {
+          position: absolute;
+          top: -39rem;
+          right: 24.5rem;
+        }
+  
+        .photo6 {
+          position: absolute;
+          top: -26rem;
+          right: 4.4rem;
+        }
+        
+        .photo7 {
+          position: absolute;
+          top: -50rem;
+          right: 3.4rem;
+        }
+      }
+    }
+  
+    .testimonials-text {
+      text-align: center;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  
+      .pink-leftButton {
+        display: flex;
+        position: absolute;
+        left: 14.9rem;
+        background: $white;
+  
+          &:hover {
+             opacity: .8;
+          }    
+      }
+  
+      .testimonials-title {
+        display: flex;
+        color: $primary_violet;
+        font: 4rem Noticia Text; 
+        font-style: italic;
+        line-height: 6.4rem;
+        width: 75.4rem;
+        margin-top: -5.2rem;
+      }
+  
+      .pink-rightButton {
+        display: flex;
+        position: absolute;
+        right: 14.7rem;
+        background: $white;
+  
+        &:hover {
+          opacity: .8;
+       } 
+      }
+  
+      span {
+        color: $primary_violet;
+        font-size: 1.8rem;
+        line-height: 9rem;
+      }
+      
+      .pink-text {
+        color: $pink;
+        font-weight:900;
+      }
+    }
+}
+.newsletter {
+    width: 100%;
+    height: 57.6rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+    .newsletter-text {
+      text-align: center;
+      margin-top: 12.6rem;
+      font-weight: 500;
+  
+      h3 {
+        color: $primary_violet;
+        font-size: 4.5rem;
+        line-height: 6.7rem;
+      }
+  
+      .newsletter-subTitle {
+        margin-top: 2.3rem;
+        color: $light_violet;
+        font-size: 1.8rem;
+        line-height: 2.7rem;
+      }
+    }
+    .newsletter-button {
+      display: flex;
+      height: 5.4rem;
+      width: 56.8rem;
+      position: relative;
+      justify-content: flex-end;
+      align-items: center;
+      margin-top: 7.5rem;
+      font-weight: 800;
+      line-height: 3rem;
+      letter-spacing: .4rem;
+      text-transform: uppercase;
+      border-bottom: .3rem solid $light_yellow;
+      
+      .email {
+        position: absolute;
+        color: #9B94A3;
+        left: 1.8rem;
+        cursor: pointer;
+        font-size: 1.8rem;
+  
+        &:hover {
+          opacity: .8;
+       } 
+       
+      }
+      
+      .subscribe {
+        cursor: pointer;
+        align-items: center;
+        width: 22.6rem;
+        height: 5.4rem;
+        background: linear-gradient(180deg, rgba(242, 242, 242, 0.5) 0%, rgba(255, 255, 255, 0) 100%);
+        transform: matrix(1, 0, 0, -1, 0, 0);
+        display: flex;
+        justify-content: space-evenly;
+  
+        p {
+          color: $pink;
+          right: 8.2rem; 
+          font-size: 1.26rem;
+          font-weight: 800;
+          line-height: 3rem;
+          letter-spacing: .6rem;
+          text-transform: uppercase;
+          transform: matrix(1, 0, 0, -1, 0, 0);
+        }
+        &:hover {
+          opacity: .8;
+       } 
+       
+       img {
+         width: 2.7rem;
+       }
+      }
+  
+    }
+}
+  
+.footer {
+    width: 100%;
+    height: 55.8rem;
+    background-color: $dark_blue;
+    display: flex;
+    color: $white;
+    flex-flow: row nowrap;
+  
+    .footer-container {
+      width: 112rem;
+      margin: 12.6rem auto;
+      @include flex-between;
+    }
+  
+    .menu-item {
+      font-weight: 800;
+      font-size: 1.26rem;
+      line-height: 2.6rem;
+      letter-spacing: .6rem;
+      text-transform: uppercase;
+      border-bottom: .1rem solid $pink;
+      position: absolute;
+      cursor: pointer;
+      &:hover {
+        opacity: .8;
+      }
+      &:after {
+        transition: all .3s ease;
+      }
+    }
+  
+    .list-menu {
+      font-weight: bold;
+      font-size: 1.26rem;
+      line-height: 2.99rem;
+      letter-spacing: .1rem;
+      margin-top: 5.7rem;
+      list-style-type: none; /* Убираем маркеры */
+    }
+  
+    .footer-firstColumn {
+      width: 16.6rem;
+  
+      .logo {
+        font-weight: 900;
+        font-size: 2.4rem;
+        line-height: 4.3rem;
+        letter-spacing: .2rem;
+      }
+  
+      .main-text {
+        margin-top: 1.7rem;
+        font-size: 1.62rem;
+        line-height: 2.6rem;
+      }
+    }
+  
+    .footer-secondColumn {
+      @include flex-between;
+      width: 15rem;
+  
+      .footer-bottom {
+        font-size: 1.17rem;
+        line-height: 1.9rem;
+        margin-top: 30rem;
+        position: absolute;
+      }
+  
+    }
+  
+    .footer-thirdColumn {
+  
+      .mail {
+        margin-left: 1.8rem;
+        font-size: 1.62rem;  
+        line-height: 2.6rem;
+        font-weight: normal;
+      }
+  
+      img {
+        vertical-align: baseline;
+      }
+  
+      .mobile {
+        margin-left: 2.1rem;
+        font-size: 1.62rem;  
+        line-height: 2.6rem;
+        font-weight: normal;
+      }
+    }
+  
+    .footer-fourthColumn {
+   
+      p {
+        position: absolute;
+        font-weight: 800;
+        font-size: 1.26rem;
+        line-height: 2.6rem;
+        letter-spacing: .6rem;
+        width: 13.2rem;
+        text-transform: uppercase;
+        border-bottom: .1rem solid $pink;
+        cursor: pointer;
+        &:hover {
+          opacity: .8;
+        }
+      }
+  
+      .icons {
+        display: flex;
+        margin-top: 7.5rem;
+        gap: 4.1rem;
+      }
+  
+    }
+}
