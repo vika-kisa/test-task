@@ -444,6 +444,24 @@ header .header-content .text p {
   background-color: #150433;
 }
 
+.footer__block {
+  width: 100%;
+  height: 1128px;
+  background-color: #30124e;
+}
+
+.container__footer {
+  padding: 0px 147px;
+}
+
+.form__block {
+  width: 100%;
+  height: 720px;
+  background-color: pink;
+  background-image: url(../../assets/img/qei9yQ8mh54.jpeg);
+  position: relative;
+}
+
 @media only screen and (min-width: 992px) {
   ::-webkit-scrollbar {
     width: 8px;
