@@ -455,11 +455,11 @@ header .header-content .text p {
 }
 
 .form__block {
-  width: 100%;
+  position: absolute;
+  margin-top: -162px;
+  width: 1146px;
   height: 720px;
-  background-color: pink;
-  background-image: url(../../assets/img/qei9yQ8mh54.jpeg);
-  position: relative;
+  background-image: url(../../assets/img/enot.jpeg);
 }
 
 @media only screen and (min-width: 992px) {
