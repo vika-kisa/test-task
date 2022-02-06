@@ -432,16 +432,313 @@ header .header-content .text p {
   height: 122.4rem;
 }
 
-.form-container {
+.form_block {
   width: 100%;
   height: 55.8rem;
   background-color: #30124E;
 }
 
-.form-container .form {
-  width: 114.6rem;
+.container_form {
+  padding: 0px 14.7rem;
+}
+
+.form {
   height: 72rem;
+  width: 114.6rem;
   background-color: #150433;
+  position: absolute;
+  margin-top: -16.2rem;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: #FCFCFC;
+}
+
+.form h5 {
+  font-weight: 500;
+  font-size: 2.7rem;
+  line-height: 4rem;
+  margin-top: 10.8rem;
+  margin-left: 9.8rem;
+}
+
+.form .form-date {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-top: 5.5rem;
+  margin-left: 9.8rem;
+  font-weight: 800;
+  font-size: 1.26rem;
+  line-height: 2.6rem;
+  letter-spacing: 0.6rem;
+  text-transform: uppercase;
+}
+
+.form .form-date form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.form .form-date form ::-webkit-input-placeholder {
+  font-size: 1.62rem;
+  line-height: 2.6rem;
+  color: #9B94A3;
+  opacity: 0.5;
+  padding: 1.8rem;
+}
+
+.form .form-date form ::-moz-placeholder {
+  font-size: 1.62rem;
+  line-height: 2.6rem;
+  color: #9B94A3;
+  opacity: 0.5;
+  padding: 1.8rem;
+}
+
+.form .form-date form :-ms-input-placeholder {
+  font-size: 1.62rem;
+  line-height: 2.6rem;
+  color: #9B94A3;
+  opacity: 0.5;
+  padding: 1.8rem;
+}
+
+.form .form-date form ::-ms-input-placeholder {
+  font-size: 1.62rem;
+  line-height: 2.6rem;
+  color: #9B94A3;
+  opacity: 0.5;
+  padding: 1.8rem;
+}
+
+.form .form-date form ::placeholder {
+  font-size: 1.62rem;
+  line-height: 2.6rem;
+  color: #9B94A3;
+  opacity: 0.5;
+  padding: 1.8rem;
+}
+
+.form .form-date .left-column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.form .form-date .left-column .users-info {
+  width: 36.2rem;
+  height: 5.4rem;
+  margin-top: 1rem;
+}
+
+.form .form-date .left-column .email {
+  margin-top: 3.5rem;
+}
+
+.form .form-date .right-column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: 3rem;
+  width: 65rem;
+}
+
+.form .form-date .right-column .message-info {
+  width: 55.8rem;
+  height: 23.4rem;
+  margin-top: 1rem;
+  padding-bottom: 12.1rem;
+  padding-left: 3.6rem;
+}
+
+.form .form-date button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-left: 39rem;
+}
+
+.form .form-date .pink-button {
+  cursor: pointer;
+  width: 21.5rem;
+  height: 5.4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 3.6rem;
+  background: #F61067;
+  margin-top: 4rem;
+  font-weight: 500;
+  font-size: 1.35rem;
+  text-transform: uppercase;
+  color: #FCFCFC;
+  letter-spacing: 0.2rem;
+}
+
+.form .form-date .pink-button:hover {
+  opacity: 0.8;
+}
+
+.footer {
+  width: 100%;
+  height: 55.8rem;
+  background-color: #30124E;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #FCFCFC;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+}
+
+.footer .footer-container {
+  width: 112rem;
+  margin: 12.6rem auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer .menu-item {
+  font-weight: 800;
+  font-size: 1.26rem;
+  line-height: 2.6rem;
+  letter-spacing: 0.6rem;
+  text-transform: uppercase;
+  border-bottom: 0.1rem solid #F61067;
+  position: absolute;
+  cursor: pointer;
+}
+
+.footer .menu-item:hover {
+  opacity: 0.8;
+}
+
+.footer .menu-item:after {
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.footer .list-menu {
+  font-weight: bold;
+  font-size: 1.26rem;
+  line-height: 2.99rem;
+  letter-spacing: 0.1rem;
+  margin-top: 5.7rem;
+  list-style-type: none;
+  /* Убираем маркеры */
+}
+
+.footer .footer-firstColumn {
+  width: 16.6rem;
+}
+
+.footer .footer-firstColumn .logo {
+  font-weight: 900;
+  font-size: 2.4rem;
+  line-height: 4.3rem;
+  letter-spacing: 0.2rem;
+}
+
+.footer .footer-firstColumn .main-text {
+  margin-top: 1.7rem;
+  font-size: 1.62rem;
+  line-height: 2.6rem;
+}
+
+.footer .footer-secondColumn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 15rem;
+}
+
+.footer .footer-secondColumn .footer-bottom {
+  font-size: 1.17rem;
+  line-height: 1.9rem;
+  margin-top: 30rem;
+  position: absolute;
+}
+
+.footer .footer-thirdColumn .mail {
+  margin-left: 1.8rem;
+  font-size: 1.62rem;
+  line-height: 2.6rem;
+  font-weight: normal;
+}
+
+.footer .footer-thirdColumn img {
+  vertical-align: baseline;
+}
+
+.footer .footer-thirdColumn .mobile {
+  margin-left: 2.1rem;
+  font-size: 1.62rem;
+  line-height: 2.6rem;
+  font-weight: normal;
+}
+
+.footer .footer-fourthColumn p {
+  position: absolute;
+  font-weight: 800;
+  font-size: 1.26rem;
+  line-height: 2.6rem;
+  letter-spacing: 0.6rem;
+  width: 13.2rem;
+  text-transform: uppercase;
+  border-bottom: 0.1rem solid #F61067;
+  cursor: pointer;
+}
+
+.footer .footer-fourthColumn p:hover {
+  opacity: 0.8;
+}
+
+.footer .footer-fourthColumn .icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 7.5rem;
+  gap: 4.1rem;
 }
 
 @media only screen and (min-width: 992px) {

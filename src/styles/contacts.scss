@@ -227,14 +227,239 @@ header {
     }
 }
 
-.form-container {
+.form_block {
     width: 100%;
     height: 55.8rem;
     background-color: $violet;
+}
+  
+.container_form {
+    padding: 0px 14.7rem;
+}
+  
+.form {
+    height: 72rem;
+    width: 114.6rem;
+    background-color: $dark_blue;
+    position: absolute;
+    margin-top: -16.2rem;
+    flex-direction: column;
+    color: $white;
 
-    .form {
-        width: 114.6rem;
-        height: 72rem;
-        background-color: $dark_blue;
+    h5 {
+        font-weight: 500;
+        font-size: 2.7rem;
+        line-height: 4rem;
+        margin-top: 10.8rem;
+        margin-left: 9.8rem;
+    }
+
+    .form-date {
+        display: flex;
+        flex-direction: row;
+        margin-top: 5.5rem;
+        margin-left: 9.8rem;
+        font-weight: 800;
+        font-size: 1.26rem;
+        line-height: 2.6rem;
+        letter-spacing: .6rem;
+        text-transform: uppercase;
+
+        form {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+
+            ::placeholder {
+                font-size: 1.62rem;
+                line-height: 2.6rem;
+                color: #9B94A3;
+                opacity: 0.5;
+                padding: 1.8rem;
+            }
+
+        }
+
+        .left-column {
+            display: flex;
+            flex-direction: column;
+
+            .users-info {
+                width: 36.2rem;
+                height: 5.4rem;
+                margin-top: 1rem;
+            }
+
+            .email {
+                margin-top: 3.5rem;
+            }
+        }
+
+        .right-column {
+            display: flex;
+            flex-direction: column;
+            margin-left: 3rem;
+            width: 65rem;
+
+            .message-info { 
+                width: 55.8rem;
+                height: 23.4rem;
+                margin-top: 1rem;    
+                padding-bottom: 12.1rem;
+                padding-left: 3.6rem;
+            }
+        }
+
+        button {
+            display: flex;
+            justify-content: flex-end;
+            margin-left: 39rem;
+        }
+
+        .pink-button {
+            cursor: pointer;
+            width: 21.5rem;
+            height: 5.4rem;  
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 3.6rem;
+            background: $pink;  
+            margin-top: 4rem;
+            font-weight: 500;
+            font-size: 1.35rem;
+            text-transform: uppercase;
+            color: $white;
+            letter-spacing: .2rem;
+          
+              &:hover {
+                 opacity: .8;
+              } 
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+.footer {
+    width: 100%;
+    height: 55.8rem;
+    background-color: $violet;
+    display: flex;
+    color: $white;
+    flex-flow: row nowrap;
+  
+    .footer-container {
+      width: 112rem;
+      margin: 12.6rem auto;
+      @include flex-between;
+    }
+  
+    .menu-item {
+      font-weight: 800;
+      font-size: 1.26rem;
+      line-height: 2.6rem;
+      letter-spacing: .6rem;
+      text-transform: uppercase;
+      border-bottom: .1rem solid $pink;
+      position: absolute;
+      cursor: pointer;
+      &:hover {
+        opacity: .8;
+      }
+      &:after {
+        transition: all .3s ease;
+      }
+    }
+  
+    .list-menu {
+      font-weight: bold;
+      font-size: 1.26rem;
+      line-height: 2.99rem;
+      letter-spacing: .1rem;
+      margin-top: 5.7rem;
+      list-style-type: none; /* Убираем маркеры */
+    }
+  
+    .footer-firstColumn {
+      width: 16.6rem;
+  
+      .logo {
+        font-weight: 900;
+        font-size: 2.4rem;
+        line-height: 4.3rem;
+        letter-spacing: .2rem;
+      }
+  
+      .main-text {
+        margin-top: 1.7rem;
+        font-size: 1.62rem;
+        line-height: 2.6rem;
+      }
+    }
+  
+    .footer-secondColumn {
+      @include flex-between;
+      width: 15rem;
+  
+      .footer-bottom {
+        font-size: 1.17rem;
+        line-height: 1.9rem;
+        margin-top: 30rem;
+        position: absolute;
+      }
+  
+    }
+  
+    .footer-thirdColumn {
+  
+      .mail {
+        margin-left: 1.8rem;
+        font-size: 1.62rem;  
+        line-height: 2.6rem;
+        font-weight: normal;
+      }
+  
+      img {
+        vertical-align: baseline;
+      }
+  
+      .mobile {
+        margin-left: 2.1rem;
+        font-size: 1.62rem;  
+        line-height: 2.6rem;
+        font-weight: normal;
+      }
+    }
+  
+    .footer-fourthColumn {
+   
+      p {
+        position: absolute;
+        font-weight: 800;
+        font-size: 1.26rem;
+        line-height: 2.6rem;
+        letter-spacing: .6rem;
+        width: 13.2rem;
+        text-transform: uppercase;
+        border-bottom: .1rem solid $pink;
+        cursor: pointer;
+        &:hover {
+          opacity: .8;
+        }
+      }
+  
+      .icons {
+        display: flex;
+        margin-top: 7.5rem;
+        gap: 4.1rem;
+      }
+  
     }
 }

@@ -67,32 +67,96 @@
                 <img src="/assets/img/contactPhoto.png" alt="photo">
             </div>
         </div>
-        <div class="form-container">
-            <div class="form">
-                
+        <div class="form_block">
+            <div class="container_form">
+                <div class="form">
+                    <h5 class="form-text">Get in touch with us</h5>
+                    <div class="form-date">
+                        <form action="users_date.html" method="get" >
+                            <div class="left-column">
+                                <label for="username">Your name</label>
+                                <input class="users-info" id="username" name="username" placeholder="Your name"
+                                type="text" required minlength="3" maxlength="15" pattern="[a-zA-Z0-9]+">
+                                <label class="email" for="email">Your email</label>
+                                <input class="users-info" id="email" name="email" placeholder="Email placeholder"
+                                type="email" required >
+                            </div>
+                            <div class="right-column">
+                                <label for="message">Your message</label>
+                                <input class="message-info" id="message" name="message" placeholder="Write your message"
+                                type="text" required>
+                            </div>
+                            <button class="pink-button"> Send message
+                                <input type="submit" value="" form="users_date.html">
+                            </button>
+                        </form>
+                    </div>
+                </div>   
             </div>
         </div>
+
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="footer-firstColumn">
+                    <p class="logo">Looper</p>
+                    <p class="main-text">Eu augue ut lectus arcu bibendum at.</p>
+                </div>
+                <div class="footer-secondColumn">
+                    <div class="menu-container">
+                      <p class="menu-item">menu</p>
+                      <ul class="list-menu">
+                        <li><a>Home</a></li>
+                        <li><a>About</a></li>
+                        <li><a>Servces</a></li>
+                        <li><a>News</a></li>
+                        <li><a>Gallery</a></li>
+                        <li><a>Contact</a></li>
+                      </ul>
+                    </div>
+                    <div class="services-container">
+                        <span class="menu-item">services</span>
+                        <ul class="list-menu">
+                          <li><a>Lorem</a></li>
+                          <li><a>Ipsum</a></li>
+                          <li><a>Dolor</a></li>
+                          <li><a>Sit Amet</a></li>
+                        </ul>
+                    </div>  
+                    <div class="footer-bottom">© 2019 Lopper by mariuszdaniel. All right reserved.</div>
+                </div>
+                <div class="footer-thirdColumn">
+                    <span class="menu-item"><a href="contacts.html">Contact us</a></span>
+                    <ul class="list-menu">
+                      <li>
+                        <img src="/assets/icons/mail.svg" alt="Mail">
+                        <a href="mailto:contact@lop.com" class="mail">contact@lop.com</a>
+                      </li>
+                      <li>
+                        <img src="/assets/icons/mobilePhone.svg" alt="Mobile">
+                        <a href="tel:8956693456" class="mobile">856 - 693 - 456</a>
+                      </li>
+                    </ul>
+                </div>
+                <div class="footer-fourthColumn">
+                    <p>follow us</p>
+                    <div class="icons">
+                      <a href="http://twitter.com" target="_blank" >
+                        <img src="/assets/icons/twitter.svg" alt="twitter">
+                      </a>
+                      <a href="http://facebook.com" target="_blank">
+                        <img src="/assets/icons/facebook.svg" alt="facebook">
+                      </a>
+                      <a href="http://instagram.com" target="_blank">
+                        <img src="/assets/icons/instagram.svg" alt="instagram">
+                      </a>
+                      <a href="http://youtube.com" target="_blank">
+                        <img src="/assets/icons/youtube.svg" alt="youtube">
+                      </a>
+                      <img src="/assets/icons/M.svg" alt="M-servise">
+                    </div>
+                </div>
+            </div>
+        </footer>
+
     </div>
-
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 </body>
