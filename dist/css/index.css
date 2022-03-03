@@ -791,11 +791,23 @@ body {
   height: 90rem;
 }
 
-.testimonials .testimonials-photo {
+.testimonials .slider {
   text-align: center;
 }
 
-.testimonials .testimonials-photo p {
+.testimonials .slider .slider__item {
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: relative;
+}
+
+.testimonials .slider .slider-photo {
+  display: inline-block;
+  height: auto;
+  max-width: 100%;
+}
+
+.testimonials .slider p {
   color: #F61067;
   font: 19.4rem Noticia Text;
   font-style: italic;
@@ -803,47 +815,60 @@ body {
   margin-top: -7.4rem;
 }
 
-.testimonials .testimonials-photo .mini-photo {
+.testimonials .slider .testimonials-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  color: #30233D;
+  font: 4rem Noticia Text;
+  font-style: italic;
+  line-height: 6.4rem;
+  width: 75.4rem;
+  margin-top: -5.2rem;
+}
+
+.testimonials .slider .mini-photo {
   position: relative;
 }
 
-.testimonials .testimonials-photo .mini-photo .photo1 {
+.testimonials .slider .mini-photo .photo1 {
   position: absolute;
   top: -24.4rem;
   left: 2.8rem;
 }
 
-.testimonials .testimonials-photo .mini-photo .photo2 {
+.testimonials .slider .mini-photo .photo2 {
   position: absolute;
   top: -43rem;
   left: 17.5rem;
 }
 
-.testimonials .testimonials-photo .mini-photo .photo3 {
+.testimonials .slider .mini-photo .photo3 {
   position: absolute;
   top: -29rem;
   left: 34.3rem;
 }
 
-.testimonials .testimonials-photo .mini-photo .photo4 {
+.testimonials .slider .mini-photo .photo4 {
   position: absolute;
   top: -29rem;
   right: 35.7rem;
 }
 
-.testimonials .testimonials-photo .mini-photo .photo5 {
+.testimonials .slider .mini-photo .photo5 {
   position: absolute;
   top: -39rem;
   right: 24.5rem;
 }
 
-.testimonials .testimonials-photo .mini-photo .photo6 {
+.testimonials .slider .mini-photo .photo6 {
   position: absolute;
   top: -26rem;
   right: 4.4rem;
 }
 
-.testimonials .testimonials-photo .mini-photo .photo7 {
+.testimonials .slider .mini-photo .photo7 {
   position: absolute;
   top: -50rem;
   right: 3.4rem;

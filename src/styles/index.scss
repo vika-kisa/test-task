@@ -554,8 +554,19 @@ html, body {
   z-index: -1;
   height: 90rem;
 
-  .testimonials-photo {
+  .slider {
    text-align: center;
+
+    .slider__item {
+      object-fit: cover;
+      position: relative;
+    }
+
+    .slider-photo {
+      display: inline-block;
+      height: auto;
+      max-width: 100%;
+    }
 
     p {
       color: $pink;
@@ -563,6 +574,17 @@ html, body {
       font-style: italic;
       font-weight: bold;
       margin-top: -7.4rem;
+    }
+
+    .testimonials-title {
+      display: flex;
+      text-align: center;
+      color: $primary_violet;
+      font: 4rem Noticia Text; 
+      font-style: italic;
+      line-height: 6.4rem;
+      width: 75.4rem;
+      margin-top: -5.2rem;
     }
 
     .mini-photo {

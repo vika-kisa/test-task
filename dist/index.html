@@ -201,9 +201,24 @@
   <!--  </div> -->
 
     <div class="testimonials">
-      <div class="testimonials-photo">
-        <img src="/assets/img/TestimonialsPhoto.png" alt="Photo">
-        <p>“</p>
+      <script defer src="./js/script.min.js"></script>
+      <div class="slider">
+            <div class="slider__item">
+              <img src="/assets/img/TestimonialsPhoto.png" alt="Photo" class="slider-photo">
+              <p>“</p>
+            </div>
+            <div class="slider__item">
+              <img src="/assets/img/testimonialsAboutPhoto.png" alt="Photo" class="slider-photo">
+              <p>“</p>
+            </div>
+            <div class="slider__item">
+              <img src="/assets/img/testimonialsPhoto(3).png" alt="Photo" class="slider-photo">
+              <p>“</p>
+            </div>
+            <div class="slider__item">
+              <img src="/assets/img/testimonialsPhoto(4).png" alt="Photo" class="slider-photo">
+              <p>“</p>
+            </div>
         <div class="mini-photo">
           <img class="photo1" src="/assets/img/1ph.png" alt="Photo">
           <img class="photo2" src="/assets/img/2ph.png" alt="Photo">
@@ -213,23 +228,21 @@
           <img class="photo6" src="/assets/img/6ph.png" alt="Photo">
           <img class="photo7" src="/assets/img/7ph.png" alt="Photo">
         </div>
-
       </div>
 
       <div class="testimonials-text">
-        <button class="pink-leftButton">
+        <button class="pink-leftButton" onclick="minusSlide()" >
           <img src="/assets/icons/PinkArrowLeft.png" alt="Left Button">
         </button>
         <span class="testimonials-title">Lectus arcu bibendum at varius. 
         Adipiscing diam donec adipiscing tristique.</span>
-        <button class="pink-rightButton">
+        <button class="pink-rightButton" onclick="plusSlide()">
           <img src="/assets/icons/PinkArrowRight.png" alt="Right Button">
         </button>
         <div class="testimonials-subTitle">
           <span class="pink-text">Kerry Johnes</span>  
           <span> <b>-</b> Some Company</span>
         </div>
-
       </div>
     </div>
 
