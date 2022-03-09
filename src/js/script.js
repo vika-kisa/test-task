@@ -1,5 +1,5 @@
 /* Индекс слайда по умолчанию */
-var slideIndex = 1;
+const slideIndex = 1;
 showSlides(slideIndex);
 
 /* Функция увеличивает индекс на 1, показывает следующй слайд*/
@@ -19,8 +19,8 @@ function currentSlide(n) {
 
 /* Основная функция слайдера */
 function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("slider__item");
+  let i;
+  let slides = document.getElementsByClassName("slider__item");
   if (n > slides.length) {
     slideIndex = 1
   }
