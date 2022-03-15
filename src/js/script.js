@@ -1,5 +1,5 @@
 /* Индекс слайда по умолчанию */
-const slideIndex = 1;
+let slideIndex = 1;
 showSlides(slideIndex);
 
 /* Функция увеличивает индекс на 1, показывает следующй слайд*/
